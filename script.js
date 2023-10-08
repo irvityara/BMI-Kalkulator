@@ -9,4 +9,16 @@ function calculateBMI() {
 
     const bmi = weight / Math.pow(height / 100, 2);
     const resultElement = document.getElementById("result");
+
+    let category;
+    if (bmi < 18.5) {
+        category = "Underweight";
+    } else if (bmi < 25) {
+        category = "Normal weight";
+    } else if (bmi < 30) {
+        category = "Overweight";
+    } else {
+        category = "Obesity";
+    }
+
 }
