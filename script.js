@@ -20,5 +20,7 @@ function calculateBMI() {
     } else {
         category = "Obesity";
     }
+    
+resultElement.innerHTML = `Your BMI is ${bmi.toFixed(2)} (${category}).`;
 
 }
